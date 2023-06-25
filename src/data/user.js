@@ -22,7 +22,7 @@ const INFO = {
 
 	articles: {
 		title: "My Articles",
-		description: "View my thoughts on various computing topics.",
+		description: "View my thoughts on various topics.",
 	},
 	projects: [
 		{
