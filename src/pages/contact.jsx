@@ -27,6 +27,8 @@ const Contact = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:title" content={`Contact | ${INFO.main.title}`} />
+				<meta property="og:description" content={currentSEO.description} />
 			</Helmet>
 
 			<div className="page-content">
@@ -50,7 +52,7 @@ const Contact = () => {
 							comment, please feel free to email me directly at {}
 							<a href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
-							</a> { INFO.main.email2 ? <><a>or </a><a href={`mailto:${INFO.main.email2}`}>
+							</a> { INFO.main.email2 ? <>or <a href={`mailto:${INFO.main.email2}`}>
 								{INFO.main.email2}
 							</a></>: null}. I look forward
 							to hearing from you!

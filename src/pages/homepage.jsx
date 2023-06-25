@@ -4,25 +4,20 @@ import { Helmet } from "react-helmet";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faTwitter,
 	faGithub,
-	faStackOverflow,
-	faInstagram,
 	faLinkedin,
+	faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
-import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+
 
 import "./styles/homepage.css";
+import HomeSocials from "../components/about/HomeSocials";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -78,6 +73,8 @@ const Homepage = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:title" content={INFO.main.title} />
+				<meta property="og:description" content={INFO.homepage.description} />
 			</Helmet>
 
 			<div className="page-content">
@@ -88,9 +85,25 @@ const Homepage = () => {
 							<Logo width={logoSize} link={false} />
 						</div>
 					</div>
-
+					<div style={{marginRight: '20px'}}></div>
 					<div className="homepage-container">
 						<div className="homepage-first-area">
+						<div className="homepage-first-area-left-side" style={{flexDirection: 'column'}}>
+								<div className="homepage-image-container">
+									<div className="homepage-image-wrapper">
+										<img
+											src="me.jpg"
+											alt="about"
+											className="homepage-image"
+										/>
+									</div>
+								</div>
+								<div className="homepage-left-info">
+									<br></br>
+									<HomeSocials />
+								</div>
+							</div>
+
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
 									{INFO.homepage.title}
@@ -117,17 +130,7 @@ const Homepage = () => {
 
 							</div>
 
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										<img
-											src="me.jpg"
-											alt="about"
-											className="homepage-image"
-										/>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 
 						<div className="homepage-socials">
@@ -152,12 +155,12 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={`mailto:${INFO.main.email}`}
+								href={INFO.socials.twitter}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faMailBulk}
+									icon={faTwitter}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -181,11 +184,7 @@ const Homepage = () => {
 								))}
 							</div>
 
-							<div className="homepage-works">
-								<Works />
-							</div> */}
 						{/* </div> */}
-
 						<div className="page-footer">
 							<Footer />
 						</div>

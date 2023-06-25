@@ -5,16 +5,19 @@ const INFO = {
 		email: "dev@devksingh.com",
 		email2: "dsingh14@illinois.edu",
 		logo: "../logo.png",
+		resume: "/files/resume.pdf",
+		cv: "/files/cv.pdf"
 	},
 
 	socials: {
 		github: "https://github.com/devksingh4",
 		linkedin: "https://linkedin.com/in/dev-singh4",
+		twitter: "https://twitter.com/_andro_studios_"
 	},
 
 	homepage: {
 		title: "Hi, I'm Dev!",
-		description: "I am a sophomore majoring in Computer Science at the University of Illinois. I am interested in Machine Learning (specifically Big Data and Natural Language Processing), as well as cloud technologies. I have previously worked with tools including: PyTorch, Keras, SLURM, scikit-learn, Express.js, Docker, Kubernetes, Canonical MaaS/Juju, Chef, and Ansible."
+		description: "I am a sophomore majoring in Computer Science at the University of Illinois Urbana-Champaign. I am interested in Deep Learning as well as cloud technologies. I have previously worked with tools including: PyTorch, Keras, SLURM, scikit-learn, Express.js, Docker, Kubernetes, Canonical MaaS/Juju, Chef, and Ansible."
 	},
 
 	articles: {

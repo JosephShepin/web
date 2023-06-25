@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import INFO from "../../data/user";
 
 import "./styles/footer.css";
 
@@ -13,7 +14,10 @@ const Footer = () => {
 							<Link to="/">Home</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<a href="/files/resume.pdf" target="_blank">Resume</a>
+							<a href={INFO.main.resume} target="_blank">Resume</a>
+						</li>
+						<li className="footer-nav-link-item">
+							<a href={INFO.main.cv} target="_blank">CV</a>
 						</li>
 						<li className="footer-nav-link-item">
 							<Link to="/projects">Projects</Link>
@@ -29,7 +33,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Dev Singh. All Rights Reserved.
+						© {new Date().getFullYear()} Dev Singh. All Rights Reserved.
 					</div>
 				</div>
 			</div>

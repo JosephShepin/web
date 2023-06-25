@@ -57,7 +57,7 @@ const Socials = () => {
 						<div className="social-text">{INFO.main.email}</div>
 					</a>
 				</div>
-				<div className="email-2-wrapper">
+				<div className="email-wrapper">
 				<a
 						href={`mailto:${INFO.main.email2}`}
 						target="_blank"

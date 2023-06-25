@@ -34,6 +34,8 @@ const ReadArticle = () => {
 				<title>{`${article().title} | ${INFO.main.title}`}</title>
 				<meta name="description" content={article().description} />
 				<meta name="keywords" content={article().keywords.join(", ")} />
+				<meta property="og:title" content={`${article().title} | ${INFO.main.title}`} />
+				<meta property="og:description" content={article().description} />
 			</Helmet>
 
 			<div className="page-content">

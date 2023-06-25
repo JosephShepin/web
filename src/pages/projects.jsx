@@ -27,6 +27,8 @@ const Projects = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:title" content={`Projects | ${INFO.main.title}`} />
+				<meta property="og:description" content={currentSEO.description} />
 			</Helmet>
 
 			<div className="page-content">

@@ -28,6 +28,8 @@ const Articles = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:title" content={`Articles | ${INFO.main.title}`} />
+				<meta property="og:description" content={currentSEO.description} />
 			</Helmet>
 
 			<div className="page-content">
@@ -60,6 +62,7 @@ const Articles = () => {
 											date={article().date}
 											title={article().title}
 											description={article().description}
+											location={article().location}
 											link={"/article/" + (index + 1)}
 										/>
 									</div>

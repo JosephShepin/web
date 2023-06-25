@@ -1,16 +1,17 @@
 import React from "react";
 
-function article_1() {
+function cmmvt() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "April 21, 2021",
+		title: "Contrastive Multi-Model Video Transformer",
+		location: "Talk, Illinois Mathematics and Science Academy, IMSAloquium 2021, Aurora, Illinois",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"Transformer networks have shown great promise in video classification and understanding tasks by reducing the dependency on recurrent networks, and instead using self-attention techniques. Recurrent techniques are often not suitable for videos/data with long-term temporal dependencies due to the vanishing gradient problem, as well as the inability to fully backpropagate due to computational power restrictions. By using self-attention, a neural network can learn long-term dependencies with lower computational requirements and higher accuracy. We aim to increase the performance of self-supervised video transformer networks by contrasting frame-level local representations with the video-level global representations and determining how contrasting different representations from different data modalities may increase accuracy.",
 		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Transformer Model",
+			"Contrastive Learning",
+			"Deep Learning",
+			"Semi-Supervised Learning",
 		],
 		style: `
 				.article-content {
@@ -27,13 +28,12 @@ function article_1() {
 		body: (
 			<React.Fragment>
 				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
+					<div className="paragraph">
+					Transformer networks have shown great promise in video classification and understanding tasks by reducing the dependency on recurrent networks, and instead using self-attention techniques. Recurrent techniques are often not suitable for videos/data with long-term temporal dependencies due to the vanishing gradient problem, as well as the inability to fully backpropagate due to computational power restrictions. By using self-attention, a neural network can learn long-term dependencies with lower computational requirements and higher accuracy. We aim to increase the performance of self-supervised video transformer networks by contrasting frame-level local representations with the video-level global representations and determining how contrasting different representations from different data modalities may increase accuracy.
+					</div>
 				</div>
+				<br></br>
+				<a href="/files/cmmvt-presentation.pdf">View Slides</a>
 			</React.Fragment>
 		),
 	};
@@ -60,6 +60,6 @@ function article_2() {
 	};
 }
 
-const myArticles = [];
+const myArticles = [cmmvt];
 
 export default myArticles;
