@@ -50,9 +50,9 @@ const Contact = () => {
 							me. I welcome your feedback, questions, and
 							suggestions. If you have a specific question or
 							comment, please feel free to email me directly at {}
-							<a href={`mailto:${INFO.main.email}`}>
+							<a className="hmlink" href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
-							</a> { INFO.main.email2 ? <>or <a href={`mailto:${INFO.main.email2}`}>
+							</a> { INFO.main.email2 ? <>or <a className="hmlink" href={`mailto:${INFO.main.email2}`}>
 								{INFO.main.email2}
 							</a></>: null}. I look forward
 							to hearing from you!

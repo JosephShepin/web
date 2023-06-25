@@ -118,14 +118,11 @@ const Homepage = () => {
 								and other similar tasks. I was also a Software Engineering Intern at <a class="hmlink" href="https://zaktilabs.com">Zakti Security Labs</a>, developing 
 								security and auditing applications for clients of all sizes.
 							</div>
-
 							<div className="subtitle homepage-subtitle">
-								I am the Treasurer, as well as an Infrastructure Project Lead, for <a class="hmlink" href="https://acm.illinois.edu">ACM @ Illinois</a>. 
-								I was also a student researcher at the <a class="hmlink" href="https://timan.cs.illinois.edu/ir/">Text Information Management and Analysis Group at the University of Illinois</a>, 
-								advised by Prof. ChengXiang Zhai and Prof. Ismini Lourentzou (Virginia Tech). There, I worked on Computer Vision research projects 
-								involving active and semi-supervised learning with data noise and sparsity.
+								I am a course assistant for <a className="hmlink" href="https://cs.illinois.edu/academics/courses/cs357">CS 357 (Numerical Methods)</a> at UIUC. I am also the Treasurer, as well as an Infrastructure Project Lead, for <a class="hmlink" href="https://acm.illinois.edu">ACM @ Illinois</a>. 
+								I was also a student researcher, working on Computer Vision models using vision transformers, at the <a class="hmlink" href="https://timan.cs.illinois.edu/ir/">Text Information Management and Analysis Group at the University of Illinois</a>, 
+								advised by Prof. ChengXiang Zhai and Prof. Ismini Lourentzou (Virginia Tech). 
 							</div>
-							<br></br>
 						</div>
 						</div>
 
@@ -161,7 +158,6 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
 						{/* <div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
