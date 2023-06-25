@@ -32,6 +32,31 @@ const INFO = {
 			logo: "",
 			linkText: "View Site",
 			link: "https://acm.illinois.edu",
+		},
+		{
+			title: "The Red Alliance",
+			description: "Designed cross-platform applications to facilitate FIRST Robotics Competition (FRC) data collection with a custom mobile app and backend REST API using React, React Native, Node.JS, MongoDB, and Docker. Developed a data analysis engine using scikit-learn and PyTorch to provide competition insights and generate predictions about future performance.",
+			logo: "",
+			linkText: "View Repositories",
+			link: "https://github.com/titanscouting"
+		},
+		{
+			title: "Epoch @ IMSA",
+			description: "Developed a team of 20 students to create and oversee a new CUDA-enabled HPC cluster using the SLURM job scheduler. Architected the technological vision and ensured overall reliability of the cluster at the hardware and software levels.",
+			link: "https://epochml.org",
+			linkText: "View Site"
+		},
+		{
+			title: "Notus",
+			description: "Built a graphical tool to model the spread of COVID-19 and generate various saferroom layouts using a Monte Carlo algorithm.",
+			link: "https://github.com/devksingh4/notus",
+			linkText: "View Repository"
+		},
+		{
+			title: "Thinkpad Tools",
+			description: "Developed a userspace tool to read and write hardware properties to the Lenovo Thinkpad system controller on Linux. Provides feature-parity with the first-party Windows client.",
+			link: "https://github.com/devksingh4/thinkpad-tools",
+			linkText: "View Repository"
 		}
 	],
 }
