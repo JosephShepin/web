@@ -21,8 +21,8 @@ import HomeSocials from "../components/about/HomeSocials";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
-	const [logoSize, setLogoSize] = useState(80);
-	const [oldLogoSize, setOldLogoSize] = useState(80);
+	const [logoSize, setLogoSize] = useState(window.innerWidth <= 600 ? 0 : 80);
+	const [oldLogoSize, setOldLogoSize] = useState(window.innerWidth <= 600 ? 0 : 80);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -30,12 +30,17 @@ const Homepage = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
+			if (window.innerWidth <= 600) {
+				setLogoSize(0);
+				setOldLogoSize(0);
+				setStayLogo(false);
+				return;
+			}
 			let scroll = Math.round(window.pageYOffset, 2);
 
-			let newLogoSize = 80 - (scroll * 4) / 10;
-
+			let newLogoSize = 80 - (scroll * 4) / 20;
 			if (newLogoSize < oldLogoSize) {
-				if (newLogoSize > 40) {
+				if (newLogoSize > 60) {
 					setLogoSize(newLogoSize);
 					setOldLogoSize(newLogoSize);
 					setStayLogo(false);
@@ -63,7 +68,6 @@ const Homepage = () => {
 		borderRadius: stayLogo ? "50%" : "none",
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
-
 	return (
 		<React.Fragment>
 			<Helmet>

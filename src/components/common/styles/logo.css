@@ -4,3 +4,11 @@
 	margin: 0;
 	padding: 0;
 }
+@media (max-width: 600px) {
+	.logo {
+		border-radius: 50%;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+}
