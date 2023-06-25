@@ -21,6 +21,11 @@
 	margin-top: -20px;
 	font-weight: 600;
 	font-size: 14px;
+	text-decoration: none;
+}
+
+.social-text a {
+	text-decoration: none;
 }
 
 .email::before {
@@ -45,5 +50,9 @@
 .pdflink:visited, .pdflink:link {
 	display: inline !important;
 	color: var(--link-color) !important;
+	text-decoration: none !important;
+}
+
+.nodec {
 	text-decoration: none !important;
 }

@@ -87,50 +87,46 @@ const Homepage = () => {
 					</div>
 					<div style={{marginRight: '20px'}}></div>
 					<div className="homepage-container">
-						<div className="homepage-first-area">
+					<div className="homepage-first-area">
 						<div className="homepage-first-area-left-side" style={{flexDirection: 'column'}}>
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										<img
-											src="me.jpg"
-											alt="about"
-											className="homepage-image"
-										/>
-									</div>
-								</div>
-								<div className="homepage-left-info">
-									<br></br>
-									<HomeSocials />
+							<div className="homepage-image-container" style={{order: 0}}>
+								<div className="homepage-image-wrapper">
+									<img
+										src="me.jpg"
+										alt="about"
+										className="homepage-image"
+									/>
 								</div>
 							</div>
+							<div className="homepage-left-info">
+								<HomeSocials />
+							</div>
+						</div>
 
-							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									{INFO.homepage.title}
-								</div>
-
-								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
-								</div>
-
-								<div className="subtitle homepage-subtitle">
-									For Summer 2023, I will be a Digital and Analytics intern at the Cat Digital division of 
-									{} <a class="hmlink" href="https://caterpillar.com">Caterpillar</a>, where I will be working on Applied Machine Learning 
-									and other similar tasks. I was also a Software Engineering Intern at <a class="hmlink" href="https://zaktilabs.com">Zakti Security Labs</a>, developing 
-									security and auditing applications for clients of all sizes.
-								</div>
-
-
-								<div className="subtitle homepage-subtitle">
-									I am the Treasurer, as well as an Infrastructure Project Lead, for <a class="hmlink" href="https://acm.illinois.edu">ACM @ Illinois</a>. 
-									I was also a student researcher at the <a class="hmlink" href="https://timan.cs.illinois.edu/ir/">Text Information Management and Analysis Group at the University of Illinois</a>, 
-									advised by Prof. ChengXiang Zhai and Prof. Ismini Lourentzou (Virginia Tech). There, I worked on Computer Vision research projects 
-									involving active and semi-supervised learning with data noise and sparsity.
-								</div>
-
+						<div className="homepage-first-area-left-side">
+							<div className="title homepage-title">
+								{INFO.homepage.title}
 							</div>
 
-							
+							<div className="subtitle homepage-subtitle">
+								{INFO.homepage.description}
+							</div>
+
+							<div className="subtitle homepage-subtitle">
+								For Summer 2023, I will be a Digital and Analytics intern at the Cat Digital division of 
+								{} <a class="hmlink" href="https://caterpillar.com">Caterpillar</a>, where I will be working on Applied Machine Learning 
+								and other similar tasks. I was also a Software Engineering Intern at <a class="hmlink" href="https://zaktilabs.com">Zakti Security Labs</a>, developing 
+								security and auditing applications for clients of all sizes.
+							</div>
+
+							<div className="subtitle homepage-subtitle">
+								I am the Treasurer, as well as an Infrastructure Project Lead, for <a class="hmlink" href="https://acm.illinois.edu">ACM @ Illinois</a>. 
+								I was also a student researcher at the <a class="hmlink" href="https://timan.cs.illinois.edu/ir/">Text Information Management and Analysis Group at the University of Illinois</a>, 
+								advised by Prof. ChengXiang Zhai and Prof. Ismini Lourentzou (Virginia Tech). There, I worked on Computer Vision research projects 
+								involving active and semi-supervised learning with data noise and sparsity.
+							</div>
+							<br></br>
+						</div>
 						</div>
 
 						<div className="homepage-socials">

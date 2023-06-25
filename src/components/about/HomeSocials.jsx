@@ -15,7 +15,11 @@ import "./styles/homesocials.css";
 const HomeSocials = () => {
 	return (
 		<div className="socials">
-			<div className="social">
+			<div style={{marginTop: '-4em'}}></div>
+			<h3>Dev Singh</h3>
+			<div style={{marginTop: '-1em'}}></div>
+			<h5>UIUC CS Student Interested in Machine Learning</h5>
+			<div className="nodec">
 				<a href="https://cs.illinois.edu" target="_blank" rel="noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
@@ -27,7 +31,7 @@ const HomeSocials = () => {
 				</a>
 			</div>
 
-			<div className="social">
+			<div className="nodec">
 				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
@@ -39,7 +43,7 @@ const HomeSocials = () => {
 				</a>
 			</div>
 
-			<div className="social">
+			<div className="nodec">
 				<a href={`mailto:${INFO.main.email}`} target="_blank" rel="noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
@@ -51,7 +55,7 @@ const HomeSocials = () => {
 				</a>
 			</div>
 
-			<div className="social">
+			<div className="nodec">
 				<a href={`mailto:${INFO.main.email2}`} target="_blank" rel="noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
@@ -63,7 +67,7 @@ const HomeSocials = () => {
 				</a>
 			</div>
 			<div className="email">
-			<div className="email-wrapper">
+			<div className="nodec">
 				<a
 						href={INFO.main.resume}
 						target="_blank"
@@ -76,7 +80,7 @@ const HomeSocials = () => {
 
 					</a>
 				</div>
-				<div className="email-wrapper">
+				<div className="nodec">
 				<a
 						href={INFO.main.cv}
 						target="_blank"
