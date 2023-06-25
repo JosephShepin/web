@@ -1,5 +1,9 @@
 @import "/src/data/styles.css";
 
+#root {
+	height: 100% !important;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 }

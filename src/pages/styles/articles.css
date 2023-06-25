@@ -50,3 +50,8 @@
 		width: 100% !important;
 	}
 }
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
