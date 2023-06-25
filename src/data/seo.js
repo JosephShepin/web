@@ -1,38 +1,28 @@
+import INFO from "./user";
 const SEO = [
 	{
 		page: "home",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
-
-	{
-		page: "about",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+		description: INFO.homepage.description,
+		keywords: ["Dev Singh", "Dev", "Dev Singh UIUC"],
 	},
 
 	{
 		page: "articles",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Articles and other works published by Dev Singh.",
+		keywords: ["Dev", "Dev Singh", "Dev Singh Articles"],
 	},
-
-	{
-		page: "projects",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
-	},
-
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Contact Dev Singh.",
+		keywords: ["Dev", "Dev Singh", "Dev Singh Contact"],
 	},
+	{
+		page: "projects",
+		description: "Learn more about Dev Singh's various projects.",
+		keywords: ["Dev", "Dev Singh", "Dev Singh Projects"],
+	}
 ];
 
 export default SEO;

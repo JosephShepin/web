@@ -98,6 +98,13 @@ const Homepage = () => {
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
+
+								<div className="subtitle homepage-subtitle">
+									For Summer 2023, I will be a Digital and Analytics intern at the Cat Digital division of 
+									{} <a href="https://caterpillar.com">Caterpillar</a>, where I will be working on Applied Machine Learning 
+									and other similar tasks. I was also a Software Engineering Intern at <a href="https://zaktilabs.com">Zakti Security Labs</a>, developing 
+									security and auditing applications for clients of all sizes.
+								</div>
 							</div>
 
 							<div className="homepage-first-area-right-side">
@@ -115,42 +122,12 @@ const Homepage = () => {
 
 						<div className="homepage-socials">
 							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
 								href={INFO.socials.github}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -166,11 +143,7 @@ const Homepage = () => {
 							</a>
 						</div>
 
-						<div className="homepage-projects">
-							<AllProjects />
-						</div>
-
-						<div className="homepage-after-title">
+						{/* <div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
 									<div
@@ -190,8 +163,8 @@ const Homepage = () => {
 
 							<div className="homepage-works">
 								<Works />
-							</div>
-						</div>
+							</div> */}
+						{/* </div> */}
 
 						<div className="page-footer">
 							<Footer />
