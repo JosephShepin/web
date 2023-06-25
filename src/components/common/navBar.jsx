@@ -22,6 +22,11 @@ const NavBar = (props) => {
 								<Link to="/">Home</Link>
 							</li>
 							<li
+								className='nav-item'
+							>
+								<a href="/files/resume.pdf" target="_blank">Resume</a>
+							</li>
+							<li
 								className={
 									active === "projects"
 										? "nav-item active"

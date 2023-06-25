@@ -8,6 +8,7 @@ import {
 	faGithub,
 	faStackOverflow,
 	faInstagram,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -101,17 +102,26 @@ const Homepage = () => {
 
 								<div className="subtitle homepage-subtitle">
 									For Summer 2023, I will be a Digital and Analytics intern at the Cat Digital division of 
-									{} <a href="https://caterpillar.com">Caterpillar</a>, where I will be working on Applied Machine Learning 
-									and other similar tasks. I was also a Software Engineering Intern at <a href="https://zaktilabs.com">Zakti Security Labs</a>, developing 
+									{} <a class="hmlink" href="https://caterpillar.com">Caterpillar</a>, where I will be working on Applied Machine Learning 
+									and other similar tasks. I was also a Software Engineering Intern at <a class="hmlink" href="https://zaktilabs.com">Zakti Security Labs</a>, developing 
 									security and auditing applications for clients of all sizes.
 								</div>
+
+
+								<div className="subtitle homepage-subtitle">
+									I am the Treasurer, as well as an Infrastructure Project Lead, for <a class="hmlink" href="https://acm.illinois.edu">ACM @ Illinois</a>. 
+									I was also a student researcher at the <a class="hmlink" href="https://timan.cs.illinois.edu/ir/">Text Information Management and Analysis Group at the University of Illinois</a>, 
+									advised by Prof. ChengXiang Zhai and Prof. Ismini Lourentzou (Virginia Tech). There, I worked on Computer Vision research projects 
+									involving active and semi-supervised learning with data noise and sparsity.
+								</div>
+
 							</div>
 
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src="me.jpg"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -128,6 +138,16 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>

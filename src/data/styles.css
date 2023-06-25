@@ -12,3 +12,8 @@
 	--secondary-font: "Roboto", sans-serif;
 	/* --------------------- */
 }
+
+.hmlink:visited, .hmlink:link {
+	color: var(--link-color) !important;
+	text-decoration: none !important;
+}
