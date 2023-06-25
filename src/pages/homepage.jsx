@@ -88,7 +88,7 @@ const Homepage = () => {
 					<div style={{marginRight: '20px'}}></div>
 					<div className="homepage-container">
 					<div className="homepage-first-area">
-						<div className="homepage-first-area-left-side" style={{flexDirection: 'column'}}>
+						<div className="homepage-first-area-left-side" style={{flexDirection: 'column', order: 1}}>
 							<div className="homepage-image-container" style={{order: 0}}>
 								<div className="homepage-image-wrapper">
 									<img
@@ -103,7 +103,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="homepage-first-area-left-side">
+						<div className="homepage-first-area-left-side" style={{order: 0}}>
 							<div className="title homepage-title">
 								{INFO.homepage.title}
 							</div>

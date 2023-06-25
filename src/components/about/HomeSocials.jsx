@@ -15,9 +15,9 @@ import "./styles/homesocials.css";
 const HomeSocials = () => {
 	return (
 		<div className="socials">
-			<div style={{marginTop: '-4em'}}></div>
+			<div style={{ marginTop: '-4em' }}></div>
 			<h3>Dev Singh</h3>
-			<div style={{marginTop: '-1em'}}></div>
+			<div style={{ marginTop: '-1em' }}></div>
 			<h5>UIUC CS Student Interested in Machine Learning</h5>
 			<div className="nodec">
 				<a href="https://cs.illinois.edu" target="_blank" rel="noreferrer">
@@ -66,35 +66,28 @@ const HomeSocials = () => {
 					<div className="social-text">{INFO.main.email2}</div>
 				</a>
 			</div>
-			<div className="email">
 			<div className="nodec">
-				<a
-						href={INFO.main.resume}
-						target="_blank"
-						rel="noreferrer"
-					>
-						<div className="social-icon">
-							<FontAwesomeIcon icon={faLink} />
-							<a className="pdflink">Resume</a>
-						</div>
-
-					</a>
-				</div>
-				<div className="nodec">
-				<a
-						href={INFO.main.cv}
-						target="_blank"
-						rel="noreferrer"
-					>
-						<div className="social-icon">
-							<FontAwesomeIcon icon={faLink} />
-							<a className="pdflink">Curriculum Vitae</a>
-						</div>
-
-					</a>
-				</div>
+				<a href={INFO.main.resume} target="_blank" rel="noreferrer">
+					<div className="social-icon">
+						<FontAwesomeIcon
+							icon={faLink}
+							className="social-icon"
+						/>
+						<a className="pdflink">Resume</a>
+					</div>
+				</a>
 			</div>
-
+			<div className="nodec">
+				<a href={INFO.main.cv} target="_blank" rel="noreferrer">
+					<div className="social-icon">
+						<FontAwesomeIcon
+							icon={faLink}
+							className="social-icon"
+						/>
+						<a className="pdflink">Curriculum Vitae</a>
+					</div>
+				</a>
+			</div>
 		</div>
 	);
 };
