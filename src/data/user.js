@@ -4,7 +4,7 @@ const INFO = {
 		name: "Dev Singh",
 		email: "dev@devksingh.com",
 		email2: "dsingh14@illinois.edu",
-		logo: "../logo.png",
+		logo: "../android-chrome-512x512.png",
 		resume: "/files/resume.pdf",
 		cv: "/files/cv.pdf"
 	},
