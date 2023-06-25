@@ -67,6 +67,6 @@ function zakti() {
 	};
 }
 
-const myArticles = [zakti, cmmvt];
+const myArticles = [cmmvt, zakti];
 
 export default myArticles;
