@@ -13,6 +13,9 @@ const Footer = () => {
 							<Link to="/">Home</Link>
 						</li>
 						<li className="footer-nav-link-item">
+							<a href="/files/resume.pdf" target="_blank">Resume</a>
+						</li>
+						<li className="footer-nav-link-item">
 							<Link to="/projects">Projects</Link>
 						</li>
 						<li className="footer-nav-link-item">
